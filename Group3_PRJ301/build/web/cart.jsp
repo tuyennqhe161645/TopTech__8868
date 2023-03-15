@@ -73,7 +73,7 @@
                                                 </td>
                                                 <td class="Product Name" data-title="Product Name">
                                                     <a href="#">
-                                                        <figure><img width="113" height="113" src="${cart.getProduct().getImg()}" alt="shipping cart"></figure>
+                                                        <figure><img style="width: 100%" width="113" height="113" src="${cart.getProduct().getImg()}" alt="shipping cart"></figure>
                                                     </a>
                                                 </td>
 
@@ -92,10 +92,18 @@
                                                 <td class="" data-title="Quantity">
                                                     <div class="">         
                                                         <form action = "./AddQuanlity?pid=${cart.getProduct().getId()}">
-                                                            <button name="act" type="submit" value="minus">-</button> 
-                                                            <input type="text" name="qty12554" value="${cart.getQuantity()}">
+                                                            <button style="
+                                                                    background: black;
+                                                                    color: white;
+                                                                    padding: 2px 1px 3px 2px;                                                               
+                                                                    margin-right: -4px;" name="act" type="submit" value="minus">-</button> 
+                                                            <input style="width: 73%; text-align: center" type="text" name="qty12554" value="${cart.getQuantity()}">
                                                             <input type="hidden" name="pid" value ="${cart.getProduct().getId()}">
-                                                            <button name="act" type="submit" value="add">+</button> 
+                                                            <button style="
+                                                                    background: black;
+                                                                    color: white;
+                                                                    padding: 2px 1px 2px 1px;
+                                                                    margin-left: -16px;" name="act" type="submit" value="add">+</button> 
                                                         </form>
                                                     </div>
                                                 </td>

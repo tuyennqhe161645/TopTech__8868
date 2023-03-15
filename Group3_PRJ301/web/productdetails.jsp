@@ -29,7 +29,7 @@
                 background-color: black;
                 padding: 5px;
                 font-size: 20px;
-                color: white; 
+                color: white;
             }
             button:hover{
                 background-color: black;
@@ -44,35 +44,33 @@
         <section style="
                  margin-top: 150px;
                  margin-left: 50px;
-                 margin-right: 50px;">
-            <table>
-                <tr>
-                    <td style="padding: 10px 32px;">   <img src="${p.getImg()}" alt="" width="900" height="900"></td>
-                    <td>
-                        <h1 style="text-align: center">Name: ${p.getName()}</h1>
-                        <div style="text-decoration: none; padding: 17px 23px;"> <b>Price: </b>${p.getPrice()}$</div>
-                        <div style="padding: 5px 23px;"><span>
-                                <b> Information:  </b>${p.getDescription()}
-                            </span></div>
-                        <div style="padding: 5px 23px;"> <b>Category: </b> ${p.getCategory().getName()}</div>
-                        <div style="padding: 5px 23px;">  <b>In Stock: </b>${p.getStock()}</div>
+                 margin-right: 50px;
+                 margin-bottom: 143px;
+                 display: flex">
 
-                        <div style="padding: 5px 23px;"> 
-                            <form action="./AddToCart" method="post">                            
-                                <b>Quantity:</b><input type="hidden" value="${p.getId()}" name="pid">
-                                <input type="number" name="quantity" value="1" max="${p.getStock()}" min="1" data-step="1"><br/><br>
-                                <div class="buttons" >
-                                    <button style="
-                                            height: 36px;
-                                            width: 102px;" type="submit">
-                                        add to cart
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            <div style="padding: 128px 102px;">   <img src="${p.getImg()}" alt=""></div>
+            <div style="width: 50%">
+            <h1 style="text-align: center">Name: ${p.getName()}</h1>
+            <div style="text-decoration: none; padding: 17px 23px;"> <b>Price: </b>${p.getPrice()}$</div>
+            <div style="padding: 5px 23px;"><span>
+                    <b> Information:  </b>${p.getDescription()}
+                </span></div>
+            <div style="padding: 5px 23px;"> <b>Category: </b> ${p.getCategory().getName()}</div>
+            <div style="padding: 5px 23px;">  <b>In Stock: </b>${p.getStock()}</div>
+            <div style="padding: 5px 23px;"> 
+                <form action="./AddToCart" method="post">                            
+                    <b>Quantity:</b><input type="hidden" value="${p.getId()}" name="pid">
+                    <input type="number" name="quantity" value="1" max="${p.getStock()}" min="1" data-step="1"><br/><br>
+                    <div class="buttons" >
+                        <button style="
+                                height: 36px;
+                                width: 102px;" type="submit">
+                            add to cart
+                        </button>
+                    </div>
+                </form>
+            </div>
+            </div>
         </section>
         <jsp:include page="footer.jsp"/>  
     </body>

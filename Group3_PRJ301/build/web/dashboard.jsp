@@ -79,7 +79,7 @@
                     </div>
                 </header>
 
-                <section style="padding-top: 59px; padding-left: 80px; padding-bottom: 209px">
+                <section style="padding-top: 59px; padding-left: 80px; padding-bottom: 289px">
                     <table>
                         <tr> 
                             <td colspan="3"><h1 style="font-weight: 500; text-align: center">DASH BOARD</h1> </td>  

@@ -1714,18 +1714,11 @@ ul.categiri li a:hover {
     color: white;
 }
 tbody .check .cart:hover{
-    background-color: #990000;
-    color: orange;
+    background-color: wheat;
+    color: black;
 }
 
-
-
-/**  shoes section **/
 .sh  {
-    /*    box-shadow: black -1px 3px 8px 9px;
-        margin-bottom: 29px;
-        padding: 40px 25px;
-        margin-top: 85px;*/
     margin-bottom: 29px;
     padding: 26px 67px;
     border-color: rgba(227, 227, 227, 0.9);
@@ -1741,10 +1734,8 @@ tbody .check .cart:hover{
     padding-bottom: 30px;
 }
 
-/**  save section **/
 .save {
     margin-top: 45px;
-    /*    background: url(../images/save_bg.jpg);*/
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -1760,7 +1751,6 @@ tbody .check .cart:hover{
 .save_box::before {
     position: absolute;
     content: "";
-    /*    background: url(../images/crros.png);*/
     height: 430px;
     width: 225px;
     top: 0;
@@ -1797,11 +1787,6 @@ tbody .check .cart:hover{
     border-radius: 30px;
 }
 
-/** end save section **/
-
-
-
-/**  Jewellery section **/
 .Jewellery-bg  {
     box-shadow: #ddd 0px 0px 19px 8px;
     margin-bottom: 29px;
