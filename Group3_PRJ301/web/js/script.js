@@ -1,9 +1,12 @@
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
- */
 
-const countToDate = new Date().setHours(new Date().getHours() + 24);
+let countToDate = sessionStorage.getItem("countToDate");
+if (!countToDate) {
+  countToDate = new Date().setHours(new Date().getHours() + 24);
+  sessionStorage.setItem("countToDate", countToDate);
+} else {
+  countToDate = parseInt(countToDate);
+}
+
 let previousTimeBetweenDates;
 setInterval(() => {
   const currentDate = new Date();
@@ -53,4 +56,3 @@ function flip(flipCard, newNumber) {
   });
   flipCard.append(topFlip, bottomFlip);
 }
-

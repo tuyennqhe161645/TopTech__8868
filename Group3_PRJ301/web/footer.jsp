@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <!-- site metas -->
-        <title>SHOP</title>
+        <title>TOPTECH</title>
 
         <!-- bootstrap css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -31,22 +31,49 @@
     </head>
     <body>
         <footer>
-            <div class="footer">
+            <div id="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="footer_top">
-                                <div class="row">                         
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                        <div style="font-size: 40px; color: white; text-align: center; letter-spacing: 10px">CONTACT</div>
-                                        <ul class="sociel">
-                                            <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-                                            <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="moduletable">
+                                <h4>Công ty TNHH Thương Mại TOPTECH</h4>
+                                <h5>Email: toptech8868@gmail.com</h5>
+                                <p style="font-size: 14px"><b>HỆ THỐNG TỔNG ĐÀI MIỄN PHÍ:</b> (Làm việc từ 08h00 - 21h00)</p>
+                                <table style="width: 296px;">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 211px;">Gọi mua hàng</td>
+                                            <td style="width: 105px;"><strong>1800 6975</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 211px;">Hỗ trợ khách hàng</td>
+                                            <td style="width: 105px;"><strong>1800 6173</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="social-icon">
+                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="moduletable">
+                                <p style="font-size: 16px; display: inline">
+                                    <a href="#"><b>HỆ THỐNG CỬA HÀNG:</b></a>
+                                </p>
+                                <p style="display: inline"></p>
+                                <br>
+                                <p style="font-size: 14px; padding-top: 4px">
+                                    -Địa chỉ 1: Khu Giáo dục và Đào tạo - Khu Công nghệ cao Hòa Lạc - Km29 Đại lộ Thăng Long, H.
+                                    Thạch Thất, TP. Hà Nội <br>
+                                    -Địa chỉ 2: Khu đo thị công nghệ FPT Đà Nẵng, P. Hòa Hải, Q. Ngũ Hành Sơn, TP. Đà Nẵng <br>
+                                    -Địa chỉ 3: Lô E2a-7, Đường D1 Khu Công nghệ cao, P. Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí
+                                    Minh <br>
+                                    -Địa chỉ 4: Số 600 Đường Nguyễn Văn Cừ (nối dài), P. An Bình, Q. Ninh Kiều, TP. Cần Thơ <br>
+                                </p>
                             </div>
                         </div>
                     </div>
