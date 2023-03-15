@@ -1,0 +1,12 @@
+.content{
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+.section{
+    width: 100%;
+    margin-top:16px;
+    margin-bottom: -163px;
+    margin-left: -3px;
+    margin-top: 41px; 
+}
