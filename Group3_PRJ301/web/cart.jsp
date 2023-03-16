@@ -69,6 +69,7 @@
                                         <c:forEach var="cart" items="${cl}">
                                             <tr class="cart_item">
                                                 <td >
+                                                    <input type="checkbox">
                                                     <a style="font-size: 22px" href="#">${cart.getProduct().getName()}</a>
                                                 </td>
                                                 <td class="Product Name" data-title="Product Name">
@@ -81,14 +82,7 @@
                                                     <div class="price price-contain">
                                                         <ins><span style="font-size: 22px;color: black; "><span class="currencySymbol">$</span>${cart.getProduct().getPrice()}</span></ins>
                                                     </div>
-                                                </td>
-                                                <!-- <td class="" data-title="Quantity">
-                                                     <div class="">
-                                                  <div class="">
-                                               <input type="text" name="qty12554" value="${cart.getQuantity()}">
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </td>-->
+                                                </td>         
                                                 <td class="" data-title="Quantity">
                                                     <div class="">         
                                                         <form action = "./AddQuanlity?pid=${cart.getProduct().getId()}">

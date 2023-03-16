@@ -43,8 +43,7 @@
                 <div style="background-color: white" class="Categories">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12">   
-                        
+                            <div class="col-md-12">                         
                                 <div class="content section">
                                     <img class="mySlides" src="./images/1.jpg" style="width:100%">
                                     <img class="mySlides" src="./images/2.jpg" style="width:100%">
@@ -54,7 +53,11 @@
                                     <img class="mySlides" src="./images/6.jpg" style="width:100%">
                                     <img class="mySlides" src="./images/7.jpg" style="width:100%">
                                 </div>
-                                
+                                <img style="
+                                     margin-top: 4%;
+                                     margin-bottom: -18%;
+                                     width: 30%;
+                                     margin-left: -14px;" src="./images/offer.png" alt="alt"/>
                                 <div class="title">
                                     <jsp:include page="clock.jsp"/>
                                     <form style="
