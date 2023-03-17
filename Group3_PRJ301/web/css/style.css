@@ -1850,58 +1850,6 @@ tbody .check .cart:hover{
     line-height: 22px;
 }
 
-/** end Jewellery section **/
-
-/**  Kids section **/
-.Kids_background {
-    background: #ee3e0f;
-    margin-top: 20px;
-}
-
-.Kids-bg  {
-    padding: 40px 0px;
-}
-.Kids-bg h3 {
-    font-size:26px;
-    line-height: 30px;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-bottom: 30px;
-}
-.Kids-bg .Kids-box {
-    text-align: center;
-    padding: 25px 20px 25px 20px;
-    text-align: center;
-
-}
-
-
-.Kids-bg .Kids-box i {
-    height: 200px;
-    float: left;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.Kids-bg .Kids-box img {
-    max-height: 290px;
-}
-
-
-.Kids-bg .Kids-box  h4 {
-    color: #fff;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    padding-bottom: 0px;
-
-}
-
-
 #footer {
     background: #44454b;
     color: white;
