@@ -10,7 +10,7 @@
     <head>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>SHOP</title>
+        <title>TOPTECH</title>
         <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
         <link href='' rel='stylesheet'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
