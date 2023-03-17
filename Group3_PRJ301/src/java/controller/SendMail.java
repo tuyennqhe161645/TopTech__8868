@@ -40,7 +40,7 @@ public class SendMail extends HttpServlet {
 //        String user = "thegalaxy2308@gmail.com";
 //        String password = "ollvprlecgkrgzbf";
         String user = "toptech8868@gmail.com";
-        String password = "kwtlqinytpukcwns";
+        String password = "jxyriefmnrchwzs";
 
         // Create properties object for the mail session
         Properties props = new Properties();
@@ -62,7 +62,7 @@ public class SendMail extends HttpServlet {
             Message msg = new MimeMessage(session);
             msg.setFrom(new InternetAddress(user));
             msg.setRecipient(Message.RecipientType.TO, new InternetAddress(recipient));
-            msg.setSubject("Upgrade to a premium account");
+            msg.setSubject("Verify your email");
             msg.setText(message);
 
             // Send message
@@ -100,7 +100,7 @@ public class SendMail extends HttpServlet {
 //        String user = "thegalaxy2308@gmail.com";
 //        String password = "ollvprlecgkrgzbf";
         String user = "toptech8868@gmail.com";
-        String password = "kwtlqinytpukcwns";
+//        String password = "sjxyriefmnrchwzs";
 
         // Create properties object for the mail session
         Properties props = new Properties();
@@ -122,7 +122,7 @@ public class SendMail extends HttpServlet {
             Message msg = new MimeMessage(session);
             msg.setFrom(new InternetAddress(user));
             msg.setRecipient(Message.RecipientType.TO, new InternetAddress(recipient));
-            msg.setSubject("Upgrade to a premium account");
+            msg.setSubject("Verify your email");
             msg.setText(message);
 
             // Send message
