@@ -1901,56 +1901,41 @@ tbody .check .cart:hover{
 
 }
 
-.Kids-bg .Kids-box span {
-    color: #fff;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 22px;
+
+#footer {
+    background: #44454b;
+    color: white;
+    padding-top: 15px;
+}
+#footer .container{
+    padding-bottom: 10px;
 }
 
-
-.footer {
-
-    background: #23242a;
-    padding-top: 2px;
-    margin-top: 12px;
-}
-
-.footer_top  {
-    padding-bottom: 20px;
-}
-
-
-ul.sociel {
+.social-icon{
+    margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    margin: 0 auto;
 }
-ul.sociel li {
+.social-icon li {
+    list-style: none;
+}
+.social-icon li a{
     display: inline-block;
-    padding:0px 10px;
-}
-
-ul.sociel li a {
-    color: #fff;
     width: 40px;
     height: 40px;
-    float: left;
-    text-align: center;
-    line-height: 38px;
-    border-radius: 20px;
-    font-size: 18px;
-    border: #fff solid 1px;
-    margin-right: 49px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
 }
-
-
-
-
-ul.sociel li a:hover {
+.social-icon li a:hover{
+    background: #f00;
+}
+.social-icon li a .fa{
     color: #fff;
-    background: #d2390a;
+    font-size: 20px;
 }
 
 

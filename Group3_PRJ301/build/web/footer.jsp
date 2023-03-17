@@ -30,14 +30,17 @@
 
     </head>
     <body>
-        <footer>
+      <footer>
             <div id="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-1">
+                            
+                        </div>
+                        <div class="col-md-5">
                             <div class="moduletable">
-                                <h4>Công ty TNHH Thương Mại TOPTECH</h4>
-                                <h5>Email: toptech8868@gmail.com</h5>
+                                <h3 style="color: wheat"><b>Công ty TNHH Thương Mại TOPTECH</b></h3>
+                                <h4 style="color: wheat">Email: toptech8868@gmail.com</h4>
                                 <p style="font-size: 14px"><b>HỆ THỐNG TỔNG ĐÀI MIỄN PHÍ:</b> (Làm việc từ 08h00 - 21h00)</p>
                                 <table style="width: 296px;">
                                     <tbody>
@@ -61,8 +64,8 @@
                         </div>
                         <div class="col-md-5">
                             <div class="moduletable">
-                                <p style="font-size: 16px; display: inline">
-                                    <a href="#"><b>HỆ THỐNG CỬA HÀNG:</b></a>
+                                <p style="font-size: 20px; display: inline">
+                                    <a href="#" style="color: wheat"><b>HỆ THỐNG CỬA HÀNG:</b></a>
                                 </p>
                                 <p style="display: inline"></p>
                                 <br>
@@ -75,6 +78,9 @@
                                     -Địa chỉ 4: Số 600 Đường Nguyễn Văn Cừ (nối dài), P. An Bình, Q. Ninh Kiều, TP. Cần Thơ <br>
                                 </p>
                             </div>
+                        </div>
+                        <div class="col-md-1">
+                            
                         </div>
                     </div>
                 </div>
