@@ -99,7 +99,7 @@
                                                                     padding: 2px 1px 2px 1px;
                                                                     margin-left: -16px;" name="act" type="submit" value="add">+</button> 
                                                         </form>
-                                                    </div>
+                                                    </div> 
                                                 </td>
                                                 <td class="product-subtotal" data-title="Total">
                                                     <div class="price price-contain">
