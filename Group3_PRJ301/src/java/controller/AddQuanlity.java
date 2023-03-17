@@ -62,7 +62,5 @@ public class AddQuanlity extends HttpServlet {
         } catch (Exception e) {
             response.sendRedirect("./404.html");
         }
-
     }
-
 }
