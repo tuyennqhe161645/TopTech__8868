@@ -69,7 +69,7 @@
                                         <c:forEach var="cart" items="${cl}">
                                             <tr class="cart_item">
                                                 <td >
-                                                    <input type="checkbox">
+                                                    
                                                     <a style="font-size: 22px" href="#">${cart.getProduct().getName()}</a>
                                                 </td>
                                                 <td class="Product Name" data-title="Product Name">
@@ -99,7 +99,7 @@
                                                                     padding: 2px 1px 2px 1px;
                                                                     margin-left: -16px;" name="act" type="submit" value="add">+</button> 
                                                         </form>
-                                                    </div>
+                                                    </div> 
                                                 </td>
                                                 <td class="product-subtotal" data-title="Total">
                                                     <div class="price price-contain">

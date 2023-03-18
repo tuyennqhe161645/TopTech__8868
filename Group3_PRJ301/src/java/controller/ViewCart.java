@@ -43,6 +43,8 @@ public class ViewCart extends HttpServlet {
             OrderDAO odao = new OrderDAO();
             ArrayList<Cart> cl = odao.getCartByuId(u.getId());
             request.setAttribute("cl", cl);
+            ArrayList<Cart> c2 = odao.getCartByuId(u.getId());
+            session.setAttribute("c2", c2);
             request.getRequestDispatcher("cart.jsp").forward(request, response);
         }
     }
