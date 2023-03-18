@@ -33,42 +33,20 @@
                 <div class="container sm-margin-top-37px">
                     <div class="row">
 
-                        <h2 class="title" style="text-align: center">Checkout</h2>
-
-
+                        <h2 class="title" style="text-align: center">Checkout</h2>              
                         <!--Order Summary-->
                         <div class=" col-md-12 sm-padding-top-48px sm-margin-bottom-0 xs-margin-bottom-15px">
                             <div class="order-summary sm-margin-bottom-80px">
-                                
+
                                 <div class="cart-list-box short-type">
                                     <ul class="cart-list">
-                                        <c:forEach var="cart" items="${sessionScope['cart'].getItems()}">
-
-                                            <li class="cart-elem">
-                                                <div class="cart-item">
-                                                    <div class="product-thumb">
-                                                        <a class="prd-thumb" href="#">
-                                                            <figure><img src="${cart.getProduct().getImg()}" width="113" height="113" alt="shop-cart" ></figure>
-                                                        </a>
-                                                    </div>
-                                                    <div class="info">
-                                                        <span class="txt-quantity">${cart.getQuantity()}X</span>
-                                                        <a href="#" class="pr-name">${cart.getProduct().getName()}</a>
-                                                    </div>
-                                                    <div class="price price-contain">
-                                                        <ins><span class="price-amount"><span class="currencySymbol">$</span>${cart.getProduct().getPrice()}</span></ins>
-
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </c:forEach>
 
                                     </ul>
                                     <ul class="subtotal">
                                         <li>
                                             <div class="subtotal-line">
                                                 <b class="stt-name">Subtotal</b>
-                                                <span class="stt-price">$${cart.getTotalMoney()}</span>
+                                                <span class="stt-price">$${total}</span>
                                             </div>
                                         </li>
                                         <li>
@@ -80,7 +58,7 @@
                                         <li>
                                             <div class="subtotal-line">
                                                 <b class="stt-name">total:</b>
-                                                <span class="stt-price">$${cart.getTotalMoney()}</span>
+                                                <span class="stt-price">$${total}</span>
                                             </div>
                                         </li>
                                     </ul>

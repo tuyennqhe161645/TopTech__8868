@@ -69,7 +69,7 @@
                                         <c:forEach var="cart" items="${cl}">
                                             <tr class="cart_item">
                                                 <td >
-                                                    <input type="checkbox">
+                                                 
                                                     <a style="font-size: 22px" href="#">${cart.getProduct().getName()}</a>
                                                 </td>
                                                 <td class="Product Name" data-title="Product Name">
