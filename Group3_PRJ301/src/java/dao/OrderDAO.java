@@ -169,5 +169,20 @@ public class OrderDAO extends DBContext {
         } catch (Exception e) {
         }
     }
+    
+    public ArrayList<OrderDetail> getAllOrderDetail() {
+        ArrayList<OrderDetail> odl = new ArrayList<>();
+        String sql = " SELECT  Top(10) p.*, o.* FROM [OrderDetail] o, Product p where o.product_id = p.product_id";
+        try {
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Product p = new Product(rs.getInt(1), rs.getString(2), rs.getDouble(3), rs.getInt(4), new Category(rs.getInt("category_id")), rs.getString(6), rs.getString(7), rs.getDate(8));
+                odl.add(new OrderDetail(rs.getInt("detail_id"), rs.getInt("order_id"), p, rs.getDouble("price"), rs.getInt("quantity")));
+            }
+        } catch (Exception e) {
+        }
+        return odl;
+    }
 
 }

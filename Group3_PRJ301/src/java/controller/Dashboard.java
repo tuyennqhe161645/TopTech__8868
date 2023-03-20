@@ -15,6 +15,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import model.Category;
+import model.OrderDetail;
 import model.Product;
 import model.User;
 
@@ -33,7 +34,7 @@ public class Dashboard extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+ protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         response.setContentType("text/html;charset=UTF-8");
@@ -48,11 +49,14 @@ public class Dashboard extends HttpServlet {
                 int numo = odao.getNumberOrder();
                 int nump = pdao.getNumberProduct("", "");
                 int numu = udao.getNumberUser();
+                ArrayList<OrderDetail> details = odao.getAllOrderDetail();
                 double profit = odao.getTotalProfit();
+                request.setAttribute("details", details);
                 request.setAttribute("numo", numo);
                 request.setAttribute("nump", nump);
                 request.setAttribute("numu", numu);
                 request.setAttribute("profit", profit);
+                request.setAttribute("", object);
                 request.getRequestDispatcher("dashboard.jsp").forward(request, response);
 
             } else {
@@ -60,6 +64,7 @@ public class Dashboard extends HttpServlet {
             }
         } catch (Exception e) {
             response.sendRedirect("login");
+
         }
 
     }
