@@ -68,8 +68,7 @@
                                     <tbody class="tbody">
                                         <c:forEach var="cart" items="${cl}">
                                             <tr class="cart_item">
-                                                <td >
-                                                    
+                                                <td >                                                  
                                                     <a style="font-size: 22px" href="#">${cart.getProduct().getName()}</a>
                                                 </td>
                                                 <td class="Product Name" data-title="Product Name">
@@ -77,7 +76,6 @@
                                                         <figure><img style="width: 100%" width="113" height="113" src="${cart.getProduct().getImg()}" alt="shipping cart"></figure>
                                                     </a>
                                                 </td>
-
                                                 <td class="product-price" data-title="Price">
                                                     <div class="price price-contain">
                                                         <ins><span style="font-size: 22px;color: black; "><span class="currencySymbol">$</span>${cart.getProduct().getPrice()}</span></ins>
@@ -113,7 +111,6 @@
                                                 </td>
                                             </tr>
                                         </c:forEach>
-
                                         <tr class="check">
                                             <td class="" colspan="2">
                                                 <a class="cart" href="./HomePage">Back to Shop</a>

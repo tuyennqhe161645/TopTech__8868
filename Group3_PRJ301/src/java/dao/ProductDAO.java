@@ -21,7 +21,8 @@ public class ProductDAO extends DBContext {
 
     public static void main(String[] args) {
         ProductDAO ProductDAO = new ProductDAO();
-        System.out.println(ProductDAO.getProduct("2", "", 1,"1"));
+        ProductDAO.UpdateProductAferCheckout(100, 2);
+        OrderDAO odao = new OrderDAO();
     }
 
     public ArrayList<Product> getProduct(String cid, String search, int index, String sort) {
@@ -152,6 +153,17 @@ public class ProductDAO extends DBContext {
         } catch (Exception e) {
         }
     }
+    
+      public void DeleteCarttByPid(int uid, int pid) {
+        String sql = "DELETE FROM Cart WHERE uid = ? and pid = ?";
+        try {
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.setInt(1, uid);
+            ps.setInt(2, pid);
+            ps.executeUpdate();
+        } catch (Exception e) {
+        }
+    }
 
     public void UpdateProduct(int id, String name, double price, int cateId, int stock, String createDate, String descri, String img) {
         String sql = "  UPDATE [Product]  set [product_name]= ?   ,[price] = ?  ,[stock]= ?,  \n"
@@ -170,6 +182,19 @@ public class ProductDAO extends DBContext {
             ps.executeUpdate();
         } catch (Exception e) {
         }
+    }
+    
+    public void UpdateProductAferCheckout(int stock, int pid){
+        String sql = "Update [Product] set [stock] = ? where [product_id] = ?";
+        try{
+            PreparedStatement ps = connection.prepareStatement(sql); 
+            ps.setInt(1, stock);
+            ps.setInt(2, pid);    
+            ps.executeUpdate(); 
+        }catch(Exception e){
+            
+        }
+        
     }
 
     public void AddProduct(String name, double price, int cateId, int stock, String descri, String img) {

@@ -73,6 +73,7 @@ public class OrderDAO extends DBContext {
         }
         return null;
     }
+
     public static void main(String[] args) {
         Cart c = new OrderDAO().checkExist(6, "15");
         System.out.println(c);
@@ -91,6 +92,7 @@ public class OrderDAO extends DBContext {
                 Product p = new Product();
                 p.setId(rs.getInt(4));
                 p.setName(rs.getString(5));
+                p.setStock(rs.getInt(7));
                 p.setImg(rs.getString(9));
                 p.setPrice(rs.getDouble(6));
                 c.setProduct(p);
@@ -157,9 +159,9 @@ public class OrderDAO extends DBContext {
         }
         return 0;
     }
-    
-    public void addCartItem(int uid, String pid, int quanlity){
-        String sql ="Update [Cart] set quantity = ? where [uid] = ? and [pid] = ?";
+
+    public void addCartItem(int uid, String pid, int quanlity) {
+        String sql = "Update [Cart] set quantity = ? where [uid] = ? and [pid] = ?";
         try {
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.setInt(1, quanlity);
@@ -169,7 +171,7 @@ public class OrderDAO extends DBContext {
         } catch (Exception e) {
         }
     }
-    
+
     public ArrayList<OrderDetail> getAllOrderDetail() {
         ArrayList<OrderDetail> odl = new ArrayList<>();
         String sql = " SELECT  Top(10) p.*, o.* FROM [OrderDetail] o, Product p where o.product_id = p.product_id";

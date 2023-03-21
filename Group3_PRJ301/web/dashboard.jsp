@@ -39,7 +39,7 @@
             for (OrderDetail o : details) {
                 map = new HashMap<Object, Object>();
                 map.put("label", o.getProduct().getName());
-                map.put("y", o.getPrice() * o.getQuantity());
+                map.put("y", o.getQuantity());
                 list.add(map);
             }
             String dataPoints = gsonObj.toJson(list);

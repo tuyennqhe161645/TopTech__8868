@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import model.Cart;
 import model.Product;
 import model.User;
-import java.math.RoundingMode;  
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 /**
@@ -31,24 +31,26 @@ public class Checkout extends HttpServlet {
         ArrayList<Cart> cart = new ArrayList<>();
         if (session.getAttribute("account") == null) {
             response.sendRedirect("login");
-        } else {       
-            DecimalFormat d = new DecimalFormat("0.00"); 
+        } else {
+            DecimalFormat d = new DecimalFormat("0.00");
             User u = (User) session.getAttribute("account");
             OrderDAO odao = new OrderDAO();
+            ProductDAO pdao = new ProductDAO();
             ArrayList<Cart> c2 = odao.getCartByuId(u.getId());
-            double total = 0; 
-            for(Cart c: c2){
-                total += c.getQuantity()*c.getProduct().getPrice(); 
-            }        
+            double total = 0;
+            for (Cart c : c2) {
+                pdao.UpdateProductAferCheckout(c.getProduct().getStock()-c.getQuantity(), c.getPid());
+//               pdao.UpdateProductAferCheckout(100, c.getPid());
+               pdao.DeleteCarttByPid(u.getId(), c.getPid());
+                total += c.getQuantity() * c.getProduct().getPrice();
+            }
             request.setAttribute("total", d.format(total));
             request.getRequestDispatcher("checkout.jsp").forward(request, response);
         }
-
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         this.doPost(req, resp);
     }
-
 }
