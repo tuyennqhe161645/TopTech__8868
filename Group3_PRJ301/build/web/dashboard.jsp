@@ -1,10 +1,8 @@
-<%-- 
-    Document   : userprofile
-    Created on : Mar 2, 2023, 11:15:05 PM
-    Author     : asus
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="model.OrderDetail"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<%@ page import="com.google.gson.Gson"%>
+<%@ page import="com.google.gson.JsonObject"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +31,57 @@
         <!-- Tweaks for older IEs-->
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+        <%
+            Gson gsonObj = new Gson();
+            Map<Object, Object> map = null;
+            List<Map<Object, Object>> list = new ArrayList<Map<Object, Object>>();
+            ArrayList<OrderDetail> details = (ArrayList<OrderDetail>) request.getAttribute("details");
+            for (OrderDetail o : details) {
+                map = new HashMap<Object, Object>();
+                map.put("label", o.getProduct().getName());
+                map.put("y", o.getQuantity());
+                list.add(map);
+            }
+            String dataPoints = gsonObj.toJson(list);
+        %>
+        <script type="text/javascript">
+            window.onload = function () {
+
+                var chart = new CanvasJS.Chart("chartContainer", {
+                    theme: "light2",
+                    title: {
+                        text: "TOP 10 Product best saler"
+                    },
+                    subtitles: [{
+                            text: "March 2023"
+                        }],
+                    axisY: {
+                        title: "Chart of best-selling products of the month",
+                        labelFormatter: addSymbols
+                    },
+                    data: [{
+                            type: "bar",
+                            indexLabel: "{y}",
+                            indexLabelFontColor: "#444",
+                            indexLabelPlacement: "inside",
+                            dataPoints: <%out.print(dataPoints);%>
+                        }]
+                });
+                chart.render();
+
+                function addSymbols(e) {
+                    var suffixes = ["", "K", "M", "B"];
+
+                    var order = Math.max(Math.floor(Math.log(Math.abs(e.value)) / Math.log(1000)), 0);
+                    if (order > suffixes.length - 1)
+                        order = suffixes.length - 1;
+
+                    var suffix = suffixes[order];
+                    return CanvasJS.formatNumber(e.value / Math.pow(1000, order)) + suffix;
+                }
+
+            }
+        </script>
     </head>
     <!-- body -->
 
@@ -79,7 +128,7 @@
                     </div>
                 </header>
 
-                <section style="padding-top: 59px; padding-left: 80px; padding-bottom: 289px">
+                <section style="padding-top: 59px; padding-left: 80px; padding-bottom: 46px">
                     <table>
                         <tr> 
                             <td colspan="3"><h1 style="font-weight: 500; text-align: center">DASH BOARD</h1> </td>  
@@ -101,12 +150,12 @@
                         </tr>
                     </table>
                 </section>
+                <div id="chartContainer" style="height: 700px; width: 100%;"></div>
+                <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
                 <jsp:include page="footer.jsp"/>
             </div>
         </div>         
-
         <!-- end footer -->
-
         <div class="overlay"></div>
     </body>
 </html>

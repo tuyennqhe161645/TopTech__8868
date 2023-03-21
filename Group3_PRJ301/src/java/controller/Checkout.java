@@ -14,7 +14,10 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import model.Cart;
+import model.Product;
 import model.User;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 
 /**
  *
@@ -25,37 +28,29 @@ public class Checkout extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        ArrayList<Integer> quantity = new ArrayList<>();
+        ArrayList<Cart> cart = new ArrayList<>();
         if (session.getAttribute("account") == null) {
             response.sendRedirect("login");
         } else {
-            try {
-                ArrayList<Cart> c2 = (ArrayList<Cart>) session.getAttribute("c2");
-                for (Cart c : c2) {
-                    int quan = c.getQuantity();
-                    quantity.add(quan);
-                }
-                request.setAttribute("cart", quantity);
-                request.getRequestDispatcher("checkout.jsp").forward(request, response);
-
-//                OrderDAO odao = new OrderDAO();
-//                ProductDAO productDao = new ProductDAO();
-//                User u = (User) session.getAttribute("account");
-//                String productId = request.getParameter("pid");
-//                String quantity = request.getParameter("quantity");
-//                Cart c = odao.checkExist(u.getId(), productId);
-//
-////                double total = ;
-            } catch (Exception e) {
-                response.sendRedirect("./404.html");
+            DecimalFormat d = new DecimalFormat("0.00");
+            User u = (User) session.getAttribute("account");
+            OrderDAO odao = new OrderDAO();
+            ProductDAO pdao = new ProductDAO();
+            ArrayList<Cart> c2 = odao.getCartByuId(u.getId());
+            double total = 0;
+            for (Cart c : c2) {
+                pdao.UpdateProductAferCheckout(c.getProduct().getStock()-c.getQuantity(), c.getPid());
+//               pdao.UpdateProductAferCheckout(100, c.getPid());
+               pdao.DeleteCarttByPid(u.getId(), c.getPid());
+                total += c.getQuantity() * c.getProduct().getPrice();
             }
+            request.setAttribute("total", d.format(total));
+            request.getRequestDispatcher("checkout.jsp").forward(request, response);
         }
-
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         this.doPost(req, resp);
     }
-
 }

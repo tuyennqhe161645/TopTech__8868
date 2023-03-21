@@ -50,8 +50,8 @@
                                 </div>
 
                             </form>
-                            <form method="post" action="forgotpassword.jsp">
-                                <button type="submit">Forgot Password</button>   
+                                <form method="post" action="forgotpassword.jsp">
+                                <input class="forgotpass" type="submit" value="Forgot Password">
                             </form>
                         </div>
                     </div>
