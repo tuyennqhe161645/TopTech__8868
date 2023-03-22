@@ -38,7 +38,7 @@
     <body class="main-layout">
 
         <div class="wrapper">
-            <div id="content">
+            <div style="margin-bottom: 61px;" id="content">
                 <jsp:include page="header1.jsp"/>
                 <div class="row">
                     <div class="col-md-12">
@@ -87,7 +87,7 @@
                                                             <button style="
                                                                     background: black;
                                                                     color: white;
-                                                                    padding: 2px 1px 3px 2px;                                                               
+                                                                    padding: 2px 1px 3px 2px;
                                                                     margin-right: -4px;" name="act" type="submit" value="minus">-</button> 
                                                             <input style="width: 73%; text-align: center" type="text" name="qty12554" value="${cart.getQuantity()}">
                                                             <input type="hidden" name="pid" value ="${cart.getProduct().getId()}">
@@ -111,16 +111,23 @@
                                                 </td>
                                             </tr>
                                         </c:forEach>
-                                        <tr class="check">
-                                            <td class="" colspan="2">
-                                                <a class="cart" href="./HomePage">Back to Shop</a>
-                                            </td>
-                                            <td class="" colspan="6">
-                                                <a class="cart" href="./Checkout">Check Out</a>
-                                            </td>
-                                        </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div style="text-align: center" class="check">
+                                <a style="
+                                   background: black;
+                                   color: wheat;
+                                   margin-right: 133px;
+                                   font-size: 20px;
+                                   border-radius: 10px;                                                             
+                                   " class="cart" href="./HomePage">Back to Shop</a>
+                                <a style="    background: black;
+                                   color: wheat;
+                                   height: 2px;
+                                   font-size: 20px;
+                                   border-radius: 10px;
+                                   "  class="cart" href="./Checkout">Check Out</a>
                             </div>
                         </div>
                     </div>

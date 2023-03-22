@@ -41,7 +41,7 @@ public class Checkout extends HttpServlet {
             for (Cart c : c2) {
                 pdao.UpdateProductAferCheckout(c.getProduct().getStock()-c.getQuantity(), c.getPid());
 //               pdao.UpdateProductAferCheckout(100, c.getPid());
-               pdao.DeleteCarttByPid(u.getId(), c.getPid());
+                pdao.DeleteCarttByPid(u.getId(), c.getPid());
                 total += c.getQuantity() * c.getProduct().getPrice();
             }
             request.setAttribute("total", d.format(total));

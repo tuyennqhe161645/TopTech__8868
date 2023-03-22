@@ -40,7 +40,6 @@
 
                                 <div class="cart-list-box short-type">
                                     <ul class="cart-list">
-
                                     </ul>
                                     <ul class="subtotal">
                                         <li>
@@ -71,7 +70,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

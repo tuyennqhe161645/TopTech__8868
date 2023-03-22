@@ -37,10 +37,8 @@ public class SendMail extends HttpServlet {
 
         // Set up mail server and authentication
         String host = "smtp.gmail.com";
-//        String user = "thegalaxy2308@gmail.com";
-//        String password = "ollvprlecgkrgzbf";
         String user = "toptech8868@gmail.com";
-//        String password = "sjxyriefmnrchwzs";
+        String password = "sjxyriefmnrchwzs";
 
         // Create properties object for the mail session
         Properties props = new Properties();
@@ -100,7 +98,7 @@ public class SendMail extends HttpServlet {
 //        String user = "thegalaxy2308@gmail.com";
 //        String password = "ollvprlecgkrgzbf";
         String user = "toptech8868@gmail.com";
-//        String password = "sjxyriefmnrchwzs";
+        String password = "sjxyriefmnrchwzs";
 
         // Create properties object for the mail session
         Properties props = new Properties();

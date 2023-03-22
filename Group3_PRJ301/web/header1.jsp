@@ -75,7 +75,7 @@
                                         </li>
                                         <li class="menu_iconb">
                                             <c:if test="${sessionScope['account']!=null}">
-                                            <li><a href="MyOrder">MY ORDER</a>
+                                            <li><a href="#">MY ORDER</a>
                                             </li>
                                         </c:if>
                                         </li>

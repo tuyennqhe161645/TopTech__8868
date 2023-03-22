@@ -3,9 +3,47 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/PRJ301_Assignment/TopTech__8868/Group3_PRJ301/src/java/controller/SendMail.java</file>
-            <file>file:/D:/PRJ301_Assignment/TopTech__8868/Group3_PRJ301/web/category.jsp</file>
-            <file>file:/D:/PRJ301_Assignment/TopTech__8868/Group3_PRJ301/src/java/dao/DBContext.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/productdetails.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/ManagerUser.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/VerifyEmail.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/forgotpassword.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/ForgotPassword.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/model/Product.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/myorder.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/Verify.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/css/style.css</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/Checkout.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/dao/ProductDAO.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/css/login.css</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/Changepassword.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/OrderDetails.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/manageruser.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/login.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/css/slick.css</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/Changepassword.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/dao/DBContext.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/productlist.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/header2.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/home.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/checkout.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/filter/AdminFilter.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/footer.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/RegisterController.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/dashboard.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/model/Order.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/dao/OrderDAO.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/header1.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/AddToCart.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/DeleteReview.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/dao/UserDAO.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/Dashboard.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/clock.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/LoginController.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/ProductDetails.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/SendMail.java</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/cart.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/web/message.jsp</file>
+            <file>file:/D:/Github_PRJ301_PROJECT/TopTech__8868/Group3_PRJ301/src/java/controller/ViewCart.java</file>
         </group>
     </open-files>
 </project-private>

@@ -12,13 +12,13 @@ import java.util.logging.Logger;
 
 public class DBContext {
 
-    protected Connection connection;
+    public Connection connection;
 
     public DBContext() {
         try {
-            String user = "tuyen";
-            String pass = "123";
-            String url = "jdbc:sqlserver://localhost:1433;databaseName=PROJECT_PRJ301_SE1726";
+            String user = "sa";
+            String pass = "12345678";
+            String url = "jdbc:sqlserver://localhost:1433;databaseName=dbScript";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, user, pass);
         } catch (Exception ex) {
