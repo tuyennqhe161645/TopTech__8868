@@ -127,7 +127,7 @@
                                             <div class="place-body">
                                                 <h4 class="place-heading"><a href="./ProductDetails?pid=${p.getId()}"class="pr-name">${p.getName()}</a></h4>
                                                 <div class="place-price">
-                                                    <ins><span>Price: <span class="currencySymbol">$</span >${p.getPrice()}</span></ins>
+                                                     <ins><span>Price: <span class="currencySymbol">$</span >${p.getPrice()}</span></ins>
                                                 </div>
                                                 <a href="./ProductDetails?pid=${p.getId()}" class="place-buy">ORDER</a>
                                             </div>

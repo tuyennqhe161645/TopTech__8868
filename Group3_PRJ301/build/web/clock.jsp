@@ -15,7 +15,7 @@
              display: flex;
              gap: 0.5em;
              font-size: 2.50rem;
-             margin-bottom: -97px; 
+             margin-bottom: -181px; 
              color: wheat" class="container">
             <div class="container-segment">
                 <div class="segment">
